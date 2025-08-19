@@ -20,8 +20,8 @@ public class kadan {
         
         if(cs==0){
             for(int i=0;i<n;i++){
-                for(int j=0;j<n-i-1;j++){
-                    if(arr[j]>arr[j+1]){
+                for(int j=0;j<n-i-1;j++){         //unnescary sorting rather that that we use 
+                    if(arr[j]>arr[j+1]){          /*maxelement=0;inside for i=1 to n if arr[i]>maxelement, max=arr[i] its 0(n)*/
                         int temp=arr[j];
                         arr[j]=arr[j+1];
                         arr[j+1]=temp;
